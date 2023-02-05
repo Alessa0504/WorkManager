@@ -7,15 +7,15 @@ import androidx.work.Worker
 import androidx.work.WorkerParameters
 
 /**
- * @Description: 多任务执行 -任务3
+ * @Description: 多任务执行 -任务1
  * @author zouji
  * @date 2023/1/3
  */
-class MultiWorker3(@NonNull context: Context, @NonNull workerParameters: WorkerParameters) :
+class Worker1(@NonNull context: Context, @NonNull workerParameters: WorkerParameters) :
     Worker(context, workerParameters) {
 
     companion object {
-        val TAG = MultiWorker3::class.java.simpleName
+        val TAG: String = Worker1::class.java.simpleName
     }
 
     override fun doWork(): Result {

@@ -11,11 +11,11 @@ import androidx.work.WorkerParameters
  * @author zouji
  * @date 2023/1/3
  */
-class MultiWorker2(@NonNull context: Context, @NonNull workerParameters: WorkerParameters) :
+class Worker2(@NonNull context: Context, @NonNull workerParameters: WorkerParameters) :
     Worker(context, workerParameters) {
 
     companion object {
-        val TAG = MultiWorker2::class.java.simpleName
+        val TAG = Worker2::class.java.simpleName
     }
 
     override fun doWork(): Result {
